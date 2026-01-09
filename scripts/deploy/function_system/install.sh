@@ -369,6 +369,11 @@ function install_function_agent_and_runtime_manager_in_the_same_process() {
     --runtime_max_log_file_num="${RUNTIME_LOG_ROLLING_MAX_FILES}" \
     --runtime_config_dir="${RUNTIME_HOME_DIR}/service/cpp/config/" \
     --enable_separated_redirect_runtime_std="${SEPARATED_REDIRECT_RUNTIME_STD}" \
+    --user_log_auto_flush_interval_ms="${USER_LOG_AUTO_FLUSH_INTERVAL_MS}" \
+    --user_log_buffer_flush_threshold="${USER_LOG_BUFFER_FLUSH_THRESHOLD}" \
+    --user_log_rolling_size_limit_mb="${USER_LOG_MAX_ROLLING_FILE_SIZE_MB}" \
+    --user_log_rolling_file_count_limit="${USER_LOG_MAX_ROLLING_LOG_FILE_NUM}" \
+    --npu_collection_enable="${NPU_COLLECTION_ENABLE}" \
     --user_log_export_mode="${USER_LOG_EXPORT_MODE}" \
     --npu_collection_mode="${NPU_COLLECTION_MODE}" \
     --gpu_collection_enable="${GPU_COLLECTION_ENABLE}" \
